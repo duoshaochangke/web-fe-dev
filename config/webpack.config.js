@@ -21,9 +21,6 @@ module.exports = {
         publicPath: path.resolve(__dirname, '/assets/')  //webpack打包后在服务器上的路径
     },
 
-    //监听文件  webpack --watch
-    watch: true,
-
     module: {
         preLoaders: [{
             test: /\.js$/,
