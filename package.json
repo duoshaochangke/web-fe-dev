@@ -2,7 +2,7 @@
   "name": "web-fe-dev",
   "description": "Simple front-end development scaffolding helper",
   "author": "pomy",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "scripts": {
     "build": "webpack --config ./config/webpack.config.js -w --progress --display-error-details",
     "start": "node --harmony ./server/app.js",
