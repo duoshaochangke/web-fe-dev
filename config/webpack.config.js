@@ -6,7 +6,7 @@ var path = require('path');
 var webpack = require("webpack");
 
 //webpack的搜索文件后缀
-var extensions = ['','.js'];
+var extensions = ['','.js','.jsx'];
 
 module.exports = {
     entry: path.resolve(__dirname, '../client/index.js'),
@@ -52,6 +52,7 @@ module.exports = {
 
     plugins: [
         new webpack.optimize.DedupePlugin(),  //避免重复打包
+        new webpack.NoErrorsPlugin(),
         new webpack.optimize.UglifyJsPlugin({
             compress: {
                 warnings: false
